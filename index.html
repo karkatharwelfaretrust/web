@@ -298,9 +298,24 @@
       margin-bottom: 0.5rem;
     }
 
+    .modal h4 {
+      color: #065f46;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
     .modal p {
       margin-bottom: 1rem;
       line-height: 1.8;
+    }
+
+    .modal ul, .modal ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal li {
+      margin-bottom: 0.5rem;
     }
 
     /* News Modal Specific Styles */
@@ -536,12 +551,9 @@
       <a href="#contact">Contact</a> |
       <a href="javascript:void(0)" onclick="openModal('newsModal')">News</a> |
       <a href="javascript:void(0)" onclick="openModal('privacyModal')">Privacy Policy</a> |
-      <a href="javascript:void(0)" onclick="openModal('termsModal')">Terms of Use</a>
-    </p>
-    <p style="margin-top: 1rem; font-size: 0.9rem;">
-      <a href="https://merchant.razorpay.com/policy/RYOLLmUm8rKG0a/shipping" target="_blank">Shipping Policy</a> |
-      <a href="https://merchant.razorpay.com/policy/RYOLLmUm8rKG0a/terms" target="_blank">Terms & Conditions</a> |
-      <a href="https://merchant.razorpay.com/policy/RYOLLmUm8rKG0a/refund" target="_blank">Cancellation & Refunds</a>
+      <a href="javascript:void(0)" onclick="openModal('shippingModal')">Shipping Policy</a> |
+      <a href="javascript:void(0)" onclick="openModal('termsModal')">Terms & Conditions</a> |
+      <a href="javascript:void(0)" onclick="openModal('refundModal')">Cancellation & Refunds</a>
     </p>
   </footer>
 
@@ -630,75 +642,189 @@
     </div>
   </div>
 
-  <!-- Terms Modal -->
+  <!-- Shipping Policy Modal -->
+  <div id="shippingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('shippingModal')">&times;</span>
+      <h2>Shipping Policy</h2>
+      <p><strong>Last updated:</strong> January 01, 2025</p>
+      
+      <p>Thank you for your interest in Karkathar Welfare Trust. Please read this Shipping Policy carefully before using our services.</p>
+      
+      <h3>Digital Services Only</h3>
+      <p>Karkathar Welfare Trust provides exclusively digital services including but not limited to:</p>
+      <ul>
+        <li>Educational assistance and guidance</li>
+        <li>Employment counseling and placement support</li>
+        <li>Entrepreneurship mentoring</li>
+        <li>Marriage assistance services</li>
+        <li>Healthcare guidance and referrals</li>
+        <li>Event registrations and community services</li>
+      </ul>
+      
+      <h3>No Physical Products</h3>
+      <p>Please note that we do not sell, ship, or deliver any physical products. All our services are delivered digitally through:</p>
+      <ul>
+        <li>Online consultations</li>
+        <li>Digital documentation</li>
+        <li>Email communications</li>
+        <li>Telephonic guidance</li>
+        <li>Virtual meetings</li>
+        <li>Online event access</li>
+      </ul>
+      
+      <h3>Service Delivery</h3>
+      <p>Upon successful registration or payment for any of our services, you will receive:</p>
+      <ul>
+        <li>Confirmation via email or SMS</li>
+        <li>Access instructions for digital services</li>
+        <li>Contact details for service providers</li>
+        <li>Schedule for appointments or sessions</li>
+      </ul>
+      
+      <h3>Contact Information</h3>
+      <p>If you have any questions about this Shipping Policy, please contact us:</p>
+      <ul>
+        <li>By email: karkatharwelfaretrust@gmail.com</li>
+        <li>By phone: +91 99444 63333</li>
+        <li>By visiting our registered office: 116, Lakshmi Nagar Extension, Porur, Chennai, Tamil Nadu, India</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
   <div id="termsModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('termsModal')">&times;</span>
-      <h2>Terms of Use</h2>
-      <p><strong>Effective Date:</strong> January 1, 2025</p>
-      <p>
-        Welcome to Karkathar Welfare Trust. By accessing or using our services, you agree to comply with and be bound by the following terms and conditions.
-      </p>
+      <h2>Terms & Conditions</h2>
+      <p><strong>Last updated:</strong> January 01, 2025</p>
       
-      <h3>Acceptance of Terms</h3>
-      <p>
-        By engaging with Karkathar Welfare Trust, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use and our Privacy Policy.
-      </p>
+      <p>Thank you for choosing Karkathar Welfare Trust. Please read these Terms and Conditions carefully before using our services.</p>
+      
+      <h3>Agreement to Terms</h3>
+      <p>By accessing or using our services, you agree to be bound by these Terms and Conditions. If you disagree with any part of the terms, you may not access our services.</p>
       
       <h3>Services Provided</h3>
-      <p>
-        Karkathar Welfare Trust provides assistance in the areas of education, employment, entrepreneurship, marriage, and healthcare by connecting individuals with qualified professionals. We reserve the right to accept or decline any request for assistance at our discretion.
-      </p>
-      
-      <h3>Eligibility and Application</h3>
-      <p>
-        All requests for assistance are subject to review and approval. We reserve the right to verify information provided and to decline assistance if eligibility criteria are not met or if resources are unavailable.
-      </p>
-      
-      <h3>No Guarantee of Services</h3>
-      <p>
-        While we strive to provide quality assistance, we do not guarantee specific outcomes or results. The Trust acts as a facilitator and is not responsible for the actions or services provided by third-party professionals.
-      </p>
-      
-      <h3>Limitation of Liability</h3>
-      <p>
-        Karkathar Welfare Trust, its trustees, and affiliated professionals shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use of our services or inability to use our services.
-      </p>
-      
-      <h3>User Responsibilities</h3>
-      <p>
-        You agree to provide accurate and complete information, use our services only for lawful purposes, respect the privacy and rights of others, and comply with all applicable laws and regulations.
-      </p>
-      
-      <h3>Intellectual Property</h3>
-      <p>
-        All content on our website and materials provided by the Trust are the property of Karkathar Welfare Trust and are protected by applicable intellectual property laws.
-      </p>
-      
-      <h3>Additional Policies</h3>
-      <p>
-        For specific policies regarding payments and transactions, please refer to our external policy pages:
-      </p>
-      <ul class="steps-list">
-        <li><a href="https://merchant.razorpay.com/policy/RYOLLmUm8rKG0a/shipping" target="_blank">Shipping Policy</a></li>
-        <li><a href="https://merchant.razorpay.com/policy/RYOLLmUm8rKG0a/terms" target="_blank">Terms & Conditions</a></li>
-        <li><a href="https://merchant.razorpay.com/policy/RYOLLmUm8rKG0a/refund" target="_blank">Cancellation & Refunds Policy</a></li>
+      <p>Karkathar Welfare Trust provides the following digital services:</p>
+      <ul>
+        <li>Educational assistance and guidance</li>
+        <li>Employment counseling and placement support</li>
+        <li>Entrepreneurship mentoring</li>
+        <li>Marriage assistance services</li>
+        <li>Healthcare guidance and referrals</li>
+        <li>Community event organization</li>
       </ul>
       
-      <h3>Governing Law</h3>
-      <p>
-        These Terms of Use shall be governed by and construed in accordance with the laws of India, and any disputes shall be subject to the exclusive jurisdiction of the courts in Chennai, Tamil Nadu.
-      </p>
+      <h3>Eligibility</h3>
+      <p>Our services are primarily intended for members of the Karkathar community. We reserve the right to verify eligibility and decline services to non-eligible individuals.</p>
       
-      <h3>Modifications</h3>
-      <p>
-        We reserve the right to modify these terms at any time. Continued use of our services after changes constitutes acceptance of the modified terms.
-      </p>
+      <h3>Registration and Accounts</h3>
+      <p>When you register with us, you must provide accurate, complete, and current information. You are responsible for maintaining the confidentiality of your account information.</p>
+      
+      <h3>Payments</h3>
+      <p>For paid services or event registrations:</p>
+      <ul>
+        <li>All fees are quoted in Indian Rupees (₹)</li>
+        <li>Payments are processed through secure payment gateways</li>
+        <li>We do not store your payment card details</li>
+        <li>Receipts will be provided for all transactions</li>
+      </ul>
+      
+      <h3>Intellectual Property</h3>
+      <p>All content, materials, and resources provided through our services are the property of Karkathar Welfare Trust and are protected by intellectual property laws.</p>
+      
+      <h3>User Conduct</h3>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use our services for any unlawful purpose</li>
+        <li>Provide false or misleading information</li>
+        <li>Interfere with or disrupt our services</li>
+        <li>Attempt to gain unauthorized access to our systems</li>
+      </ul>
+      
+      <h3>Limitation of Liability</h3>
+      <p>Karkathar Welfare Trust shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services.</p>
+      
+      <h3>Governing Law</h3>
+      <p>These Terms shall be governed by and construed in accordance with the laws of India, and any disputes shall be subject to the exclusive jurisdiction of the courts in Chennai.</p>
+      
+      <h3>Changes to Terms</h3>
+      <p>We reserve the right to modify these terms at any time. We will notify users of any material changes via email or through our website.</p>
+      
+      <h3>Contact Us</h3>
+      <p>If you have any questions about these Terms and Conditions, please contact us:</p>
+      <ul>
+        <li>By email: karkatharwelfaretrust@gmail.com</li>
+        <li>By phone: +91 99444 63333</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Cancellation & Refunds Modal -->
+  <div id="refundModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('refundModal')">&times;</span>
+      <h2>Cancellation & Refunds Policy</h2>
+      <p><strong>Last updated:</strong> January 01, 2025</p>
+      
+      <p>Thank you for choosing Karkathar Welfare Trust. We are committed to providing quality services to our community members. Please read this Cancellation and Refunds Policy carefully.</p>
+      
+      <h3>Digital Services</h3>
+      <p>Karkathar Welfare Trust provides exclusively digital services including educational assistance, employment counseling, entrepreneurship mentoring, marriage assistance, healthcare guidance, and event registrations. We do not deal in physical products.</p>
+      
+      <h3>General Refund Policy</h3>
+      <p>Due to the nature of our digital services and community work, we generally do not provide refunds once services have been initiated or events have been organized. However, we consider refund requests under specific circumstances as outlined below.</p>
+      
+      <h3>Event Registrations</h3>
+      <p>For event registrations (such as Mangala Sandhippu 2025):</p>
+      <ul>
+        <li><strong>Cancellation 15 days before event:</strong> 75% refund</li>
+        <strong>Cancellation 7 days before event:</strong> 50% refund</li>
+        <li><strong>Cancellation less than 7 days before event:</strong> No refund</li>
+        <li><strong>Event cancellation by organizers:</strong> Full refund</li>
+        <li><strong>Event postponement:</strong> Amount will be adjusted for rescheduled event</li>
+      </ul>
+      
+      <h3>Consultation Services</h3>
+      <p>For consultation and guidance services:</p>
+      <ul>
+        <li><strong>Cancellation before service initiation:</strong> 90% refund</li>
+        <li><strong>Cancellation after first session:</strong> 50% refund</li>
+        <li><strong>Cancellation after second session:</strong> No refund</li>
+      </ul>
+      
+      <h3>No-Refund Scenarios</h3>
+      <p>Refunds will not be provided in the following cases:</p>
+      <ul>
+        <li>Services already rendered or consultations completed</li>
+        <li>Digital materials and resources already provided</li>
+        <li>Event registrations where participation materials have been prepared</li>
+        <li>Cases of user-provided incorrect information</li>
+        <li>Voluntary non-participation after registration</li>
+      </ul>
+      
+      <h3>Refund Processing</h3>
+      <p>Approved refunds will be processed within 7-10 business days through the original payment method. Bank or payment gateway charges may be deducted from the refund amount.</p>
+      
+      <h3>How to Request Cancellation/Refund</h3>
+      <p>To request a cancellation or refund:</p>
+      <ol>
+        <li>Send an email to karkatharwelfaretrust@gmail.com</li>
+        <li>Include your registration details and payment reference number</li>
+        <li>State the reason for cancellation/refund request</li>
+        <li>We will respond within 3 business days</li>
+      </ol>
+      
+      <h3>Special Considerations</h3>
+      <p>Karkathar Welfare Trust may consider exceptional cases for full or partial refunds based on genuine emergencies or unforeseen circumstances at the discretion of the trust management.</p>
       
       <h3>Contact Information</h3>
-      <p>
-        If you have any questions about these Terms of Use, please contact us using the information provided in the Contact section above.
-      </p>
+      <p>For any questions about this Cancellation and Refunds Policy, please contact us:</p>
+      <ul>
+        <li>By email: karkatharwelfaretrust@gmail.com</li>
+        <li>By phone: +91 99444 63333</li>
+        <li>By visiting our registered office: 116, Lakshmi Nagar Extension, Porur, Chennai, Tamil Nadu, India</li>
+      </ul>
     </div>
   </div>
 
